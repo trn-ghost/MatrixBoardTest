@@ -58,7 +58,9 @@ public class MatrixBoardTest {
 
     @Test
     public void negativeLoginTest(){
-        LoginPage loginPage = new LoginPage();
+        LoginPage loginPage = new LoginPage(); //создаем экземпляр LoginPage
+
+        //остальные шаги просто комбинируем в цепочку
         loginPage.load()
                 .fillLoginField("user")
                 .fillPasswordField("asd")
